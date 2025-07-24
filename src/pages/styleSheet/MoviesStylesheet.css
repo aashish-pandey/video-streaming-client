@@ -1,0 +1,13 @@
+.MoviePageMovieCard{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 3rem;
+    min-height: 100vh;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    /* border: 2px solid red; */
+}

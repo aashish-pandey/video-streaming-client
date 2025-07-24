@@ -1,0 +1,110 @@
+.AvailablePlans {
+  width: 75vw;
+  margin: 0 12vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media (max-width: 667px) {
+  .AvailablePlans {
+    flex-direction: column;
+  }
+  .AvailablePlansLabel {
+    display: none;
+  }
+}
+
+.AvailablePlansHeading {
+  padding: 4rem;
+  background-color: rgb(246, 89, 89);
+  color: rgb(235, 230, 230);
+  font-size: 1rem;
+  font-weight: 800;
+  /* border: 2px solid black; */
+}
+
+.AvailablePlansContent .AvailablePlansHeading {
+  background-color: white;
+  color: rgb(0, 0, 0);
+}
+
+.AvailablePlansContent .AvailablePlansHeading:hover {
+  cursor: default;
+}
+
+.AvailablePlansLabel {
+  display: block;
+
+  /* border: 4px solid green; */
+}
+
+.AvailablePlansLabel > input {
+  /* position: absolute; */
+  visibility: hidden;
+}
+
+.AvailablePlansLabel > input ~ .AvailablePlansHeading {
+  /* DIV STYLES */
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.AvailablePlansLabel > input:checked + div {
+  background-color: red;
+  color: white;
+}
+
+.AvailablePlanSpecs {
+  display: block;
+  padding: 1.5rem;
+  border-bottom: 1px solid rgb(95, 94, 94);
+  color: black;
+}
+
+.AvailablePlansLabel > .SignIn {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  padding: 13px 15px 13px 10px;
+  background-color: rgb(246, 89, 89);
+  color: white;
+  border-radius: 12px;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border: none;
+  margin-right: 1rem;
+  transition: 0.4s;
+}
+
+.AvailablePlansLabel > input:checked ~ .SignIn {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  padding: 13px 15px 13px 10px;
+  background-color: rgb(246, 89, 89);
+  color: white;
+  border-radius: 12px;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border: none;
+  margin-right: 1rem;
+  transition: 0.4s;
+}
+
+.AvailablePlansLabel > input:checked ~ .SignIn:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.AvailablePlansLabel > input:checked ~ .AvailablePlanSpecs {
+  color: red;
+  border-bottom: 1px solid red;
+}
+
+.AvailablePlansLabel > .SignIn:hover {
+  transform: scale(1.1, 1.1);
+}

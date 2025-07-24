@@ -1,0 +1,11 @@
+.profileMainPage{
+    background-color: black;
+    color: white;
+    width: 100vw;
+    min-height: 100vh;
+    bottom: 0;
+}
+
+.profileMain{
+    padding: 3rem;
+}
